@@ -3,12 +3,12 @@ name = "SigmaOS-boot_config"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "boot_config component"
+description = "A Rust model for boot-menu settings, kernel parameters, and boot entries. It formats command-line parameters and generates GRUB-style configuration text in memory."
 upstream = []
 
 [contract]
 provides = ["component"]
-depends_on = []
+depends_on = ["SigmaOS-system"]
 
 [maturity]
 status = "Scaffold"
